@@ -80,7 +80,6 @@ const StyledMyProjects = styled.div`
   .swiper {
     width: 100%;
     height: 100%;
-    max-height: 2500px;
     padding: 50px 0px;
   }
 
@@ -125,10 +124,9 @@ const StyledMyProjects = styled.div`
   .swiper-slide img {
     display: block;
     width: 100%;
-    max-height: 488px;
     filter: grayscale(100%);
-    transform: translate();
     transition: all 0.5s;
+    object-fit: cover;
     @media screen and (max-width: 768px) {
       filter: grayscale(0);
     }
