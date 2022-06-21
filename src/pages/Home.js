@@ -2,13 +2,13 @@ import React from "react";
 import styled from "styled-components";
 
 //Importing Images
-import photo from "../images/instagram posts/post1.jpg";
+import photo from "../images/instagram posts/head.jpg";
 import htmlImg from "../images/html.png";
 import cssImg from "../images/css.png";
 import reactImg from "../images/react.png";
-import bootstrapImg from "../images/bootstrap.png";
-import wordpressImg from "../images/wordpress.png";
-import phpImg from "../images/php.png";
+import jsImg from "../images/js.png";
+import nodeImg from "../images/node.png";
+import nextjs from "../images/next-js.png";
 
 //Importing Components
 import MyProjects from "../components/MyProjects";
@@ -30,14 +30,15 @@ function Home() {
         </SectionOne>
         <SectionTwo>
           <Photo>
+            <h2>Kod yazıyorum gözlerim kapalı</h2>
             <img src={photo} alt="avatar" />
           </Photo>
           <LeftSide>
             <LeftCard>
               <h5>BIOGRAPHY</h5>
               <p>
-                Work for money and design for love! I’m Mehmet, a Web Developer
-                and Designer based in Izmir.
+                Work for money and design for love! I’m Mehmet, a React.js
+                Developer based in Izmir.
               </p>
             </LeftCard>
             <LeftCard>
@@ -59,7 +60,7 @@ function Home() {
               <h5>
                 YEARS OF <br /> EXPERIENCE
               </h5>
-              <p>1</p>
+              <p>2</p>
             </RightCard>
             <RightCard>
               <h5>
@@ -97,6 +98,13 @@ function Home() {
             </Advantage>
             <Advantage>
               <div>
+                <img src={jsImg} alt="javascript" />
+                <h2>90%</h2>
+              </div>
+              <h6>JAVASCRIPT</h6>
+            </Advantage>
+            <Advantage>
+              <div>
                 <img src={reactImg} alt="react" />
                 <h2>95%</h2>
               </div>
@@ -104,24 +112,17 @@ function Home() {
             </Advantage>
             <Advantage>
               <div>
-                <img src={wordpressImg} alt="wordpress" />
-                <h2>80%</h2>
+                <img src={nextjs} alt="nextjs" />
+                <h2>90%</h2>
               </div>
-              <h6>WORDPRESS</h6>
+              <h6>NEXT JS</h6>
             </Advantage>
             <Advantage>
               <div>
-                <img src={bootstrapImg} alt="bootstrap" />
+                <img src={nodeImg} alt="node-js" />
                 <h2>80%</h2>
               </div>
-              <h6>BOOTSTRAP</h6>
-            </Advantage>
-            <Advantage>
-              <div>
-                <img src={phpImg} alt="php" />
-                <h2>70%</h2>
-              </div>
-              <h6>PHP</h6>
+              <h6>NODE JS</h6>
             </Advantage>
           </MyAdvantages>
         </SectionThree>
@@ -291,8 +292,10 @@ const SectionTwo = styled.section`
 
 const Photo = styled.div`
   width: 50%;
-  padding: 0 25px;
+  margin: 0 25px;
   order: 2;
+  position: relative;
+  user-select: none;
   @media screen and (max-width: 768px) {
     width: 100%;
     order: 1;
@@ -305,12 +308,22 @@ const Photo = styled.div`
     min-height: 900px;
     border-radius: 3%;
     object-fit: cover;
-    object-position: 50% 10%;
     @media screen and (max-width: 768px) {
       max-height: auto;
       min-height: auto;
       border-radius: 2%;
     }
+  }
+
+  h2 {
+    position: absolute;
+    top: 2rem;
+    width: 100%;
+    background-color: rgba(250, 69, 41, 0.6);
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 1.5rem;
   }
 `;
 

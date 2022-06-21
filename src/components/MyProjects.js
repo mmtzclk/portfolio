@@ -8,6 +8,7 @@ import figuremarket from "../images/figuremarket.png";
 import minder from "../images/minder.png";
 import mehmetflix from "../images/mehmetflix.png";
 import netflixclone from "../images/netflix-clone.png";
+import filmingo from "../images/filmingo.jpg";
 
 import "swiper/swiper.scss";
 import "swiper/modules/navigation/navigation.scss"; // Navigation module
@@ -42,6 +43,13 @@ function MyProjects() {
             <img src={figuremarket} alt="figuremarket" />
             <h4>E-Commerce</h4>
             <h2>Figure Market</h2>
+          </Link>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Link to="//filmingo.netlify.app/" target="_blank">
+            <img src={filmingo} alt="filmingo" />
+            <h4>Movie Page</h4>
+            <h2>Filmingo</h2>
           </Link>
         </SwiperSlide>
         <SwiperSlide>

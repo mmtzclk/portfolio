@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { FiFacebook, FiInstagram, FiTwitter, FiLinkedin } from "react-icons/fi";
-import photo from "../images/instagram posts/post1.jpg";
+import photo from "../images/instagram posts/head.jpg";
 
 function About() {
   document.title = "About Mehmet";
@@ -174,7 +174,6 @@ const Photo = styled.div`
     max-height: 900px;
     border-radius: 3%;
     object-fit: cover;
-    object-position: 50% 10%;
     @media screen and (max-width: 768px) {
       border-radius: 2%;
     }
